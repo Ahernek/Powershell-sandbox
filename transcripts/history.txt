@@ -1,0 +1,44 @@
+
+[32;1m  Id     Duration CommandLine[0m
+[32;1m  --     -------- -----------[0m
+   1        0.020 Get-Host | Select-Object Version
+   2        0.120 Get-Service where-Object Status -eq 'Stopped'
+   3        1.790 Get-Service | where-Object Status -eq 'Stopped'
+   4        0.113 run
+   5        0.145 ps-services.ps1
+   6        0.343 d:\KMA_PC\Git-Repos\Powershell-sandbox\ps-services.ps1
+   7        0.318 d:\KMA_PC\Git-Repos\Powershell-sandbox\ps-services.ps1
+   8        0.089 $data
+   9        0.379 d:\KMA_PC\Git-Repos\Powershell-sandbox\ps-services.ps1
+  10        0.174 notepad .\services.csv
+  11        0.354 d:\KMA_PC\Git-Repos\Powershell-sandbox\ps-services.ps1
+  12        0.150 get-content .\services.csv
+  13        0.174 (get-command).count
+  14        2.406 (get-command).count
+  15        0.140 get.command -Name "DHCP"
+  16        0.156 get.command -Name *DHCP*
+  17        0.306 get-command -Name *DHCP*
+  18        8.709 get-verb | more
+  19        0.027 get-verb -group Security | Format-List
+  20        0.180 start https://news.bbc.co.uk
+  21        0.030 get-service -Name M*
+  22        0.037 get-service -Name M* -ComputerName Kevins-Macbook-Air
+  23        1.539 Get-NetIPAddress
+  24     1:59.482 netstat
+  25        0.032 cls
+  26       47.153 get-alias | more
+  27        0.034 gsv -Name M*
+  28        0.029 gsv M*
+  29        2.290 get-command
+  30        0.113 get-command -verb Get -Noun *DNS*
+  31        2.501 get-command
+  32        1.718 get-help -name *DNS*
+  33        0.011 cls
+  34        0.617 get-service
+  35        0.043 get-service -examples
+  36        0.038 get-service -Examples
+  37        7.929 help get-command -examples
+  38        3.337 gip
+  39        0.048 get-history
+  40        0.061 md .\transcripts
+
